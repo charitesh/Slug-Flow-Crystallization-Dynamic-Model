@@ -157,42 +157,6 @@ python test.py
 
 The vizualizations of predictions can be seen under `results/run_<id>/`. The current best performing model's `(run_id - 1752708457)` visualizations can be found in the same directory.
 
-Here are the best performing model's graph and results
-
-### Loss Curve
-
-<p align="center">
-  <img src="tools/tuning/results/1752708457/loss_plot_run1752708457.png" alt="Loss Plot" width="800"/>
-</p>
-
-### State-wise Predictions
-
-<div>
-<p align="center">
-  <img src="results/ann/1752708457/state_c_cluster0.png" alt="Closed Loop Predictions" width="800", height="300/>
-</p>
-
-<p align="center">
-  <img src="results/ann/1752708457/state_d10_cluster0.png" alt="Closed Loop Predictions" width="800", height="300/>
-</p>
-
-<p align="center">
-  <img src="results/ann/1752708457/state_d50_cluster0.png" alt="Closed Loop Predictions" width="800", height="300/>
-</p>
-
-<p align="center">
-  <img src="results/ann/1752708457/state_d90_cluster0.png" alt="Closed Loop Predictions" width="800", height="300/>
-</p>
-
-<p align="center">
-  <img src="results/ann/1752708457/state_T_PM_cluster0.png" alt="Closed Loop Predictions" width="800", height="300/>
-</p>
-
-<p align="center">
-  <img src="results/ann/1752708457/state_T_TM_cluster0.png" alt="Closed Loop Predictions" width="800", height="300/>
-</p>
-
-</div>
 
 ### Test Evaluation Results
 
@@ -244,41 +208,6 @@ It performs the following:
 - Applies the correction to test predictions to yield **CQR intervals**
 - Saves coverage plots for selected test batches
 
----
-
-### CQR vs Uncalibrated Intervals (Example)
-
-<div>
-
-<p align="center">
-  <img src="results/ann/cqr_results/cluster0/cqr_comparison_c.png" alt="CQR Coverage for c" width="800", height="300/>
-</p>
-
-<p align="center">
-  <img src="results/ann/cqr_results/cluster0/cqr_comparison_d10.png" alt="CQR Coverage for d10" width="800", height="300/>
-</p>
-
-<p align="center">
-  <img src="results/ann/cqr_results/cluster0/cqr_comparison_d50.png" alt="CQR Coverage for d50" width="800", height="300/>
-</p>
-
-<p align="center">
-  <img src="results/ann/cqr_results/cluster0/cqr_comparison_d90.png" alt="CQR Coverage for d90" width="800", height="300/>
-</p>
-
-<p align="center">
-  <img src="results/ann/cqr_results/cluster0/cqr_comparison_T_PM.png" alt="CQR Coverage for T_PM" width="800", height="300/>
-</p>
-
-<p align="center">
-  <img src="results/ann/cqr_results/cluster0/cqr_comparison_T_TM.png" alt="CQR Coverage for T_TM" width="800", height="300/>
-</p>
-
-</div>
-
-Each subplot compares:
-- **Left:** Quantile Regression (QR) intervals before calibration
-- **Right:** Conformalized QR (CQR) intervals with corrected coverage
 
 ---
 
